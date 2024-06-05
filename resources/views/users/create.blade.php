@@ -1,4 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.backend')
+@section('title', 'Manage Users')
+
+
 @section('content')
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -55,8 +58,9 @@
                             </div>
                         </div>
                         <div class="mb-3 row">
+                            {{-- <label for="roles" class="col-md-4 col-form-label text-md-end text-start">Roles</label> --}}
                             <div class="col-md-4 text-md-end">
-                                <label for="permissions" class="col-form-label  text-start">Permissions</label>
+                                <label for="roles" class="col-form-label  text-start">Roles</label>
                                 <div class="fw-light fs-6 font-monospace">Hold down the Ctrl (windows) or Command (Mac)
                                     button to select multiple options.</div>
                             </div>

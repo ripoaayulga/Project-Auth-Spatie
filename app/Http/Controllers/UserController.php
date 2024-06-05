@@ -91,6 +91,7 @@ class UserController extends Controller
      */
     public function update(UpdateUserRequest $request, User $user): RedirectResponse
     {
+        dd($request);
         $input = $request->all();
         if (!empty($request->password)) {
             $input['password'] = Hash::make($request->password);
